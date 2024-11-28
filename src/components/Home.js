@@ -58,7 +58,8 @@ const Home = () => {
           <div className="flex items-center justify-center gap-6 text-lg sm:text-xl md:text-2xl mt-2 text-center text-white text-transparent bg-clip-text font-bold">
             <div className="flex gap-2 justify-center items-center">
               <i className="fa-regular fa-calendar"></i>
-              30 January 2025
+              {/* 30 January 2025 */}
+              Coming soon
             </div>
             <div className="flex gap-2 justify-center items-center">
               <i className="fa-solid fa-hotel"></i>

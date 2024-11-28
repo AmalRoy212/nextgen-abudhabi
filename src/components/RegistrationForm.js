@@ -40,22 +40,23 @@ const RegistrationForm = () => {
       cleanedData[key] = data[key] || '';
     }
 
-    try {
-      const response = await axios.post('https://utrechtitconsulting.com/api/nextgen-abudhabi-registration.php', cleanedData, {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
-      console.log(response.data); // Log API response to verify format
-      if (response.data.message === 'Registration successful') {
-        alert('Registration successful');
-      } else {
-        throw new Error('Registration failed');
-      }
-    } catch (error) {
-      console.error('Error:', error.message || error.response?.data?.message || error);
-      alert('There was an error submitting the form. Please try again.');
-    }
+    // try {
+    //   const response = await axios.post('https://utrechtitconsulting.com/api/nextgen-abudhabi-registration.php', cleanedData, {
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //   });
+    //   console.log(response.data); 
+    //   if (response.data.message === 'Registration successful') {
+    //     alert('Registration successful');
+    //   } else {
+    //     throw new Error('Registration failed');
+    //   }
+    // } catch (error) {
+    //   console.error('Error:', error.message || error.response?.data?.message || error);
+    //   alert('There was an error submitting the form. Please try again.');
+    // }
+    alert("Registration will start soon")
   };
 
   // Custom email validation function
